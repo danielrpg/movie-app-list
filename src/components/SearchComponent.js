@@ -10,7 +10,7 @@ class SearchCompoment extends Component {
     }
 
     searchMovieFromOMDB = () => {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${this.state.searchText}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${this.state.searchText}`)
         .then(res => res.json())
         .then(data => {
             // console.log(data);
